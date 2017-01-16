@@ -1,0 +1,408 @@
+@font-face{
+	font-family: 'Roboto';
+	src: url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+}
+
+body{
+	width: 1920px;
+	font-family: 'Roboto',  sans-serif;
+}
+
+header{
+	position: relative;
+	height: 960px;
+	background-image: url("../pics/football.png");
+	font-family: 'Roboto',  sans-serif;
+}
+
+.logo{
+	margin-left: 195px;
+	margin-top: 55px;
+}
+
+.first-block-2{
+	position: absolute;
+	left: 1550px;
+	top: 65px;
+	width: 205px;
+	font-size: 14px;
+	color: white;
+}
+
+.hello-part-1, .hello-part-2{
+	position: absolute;
+	color: white;
+	font-size: 90px;
+	line-height: 31px;
+	font-weight: bold;
+}
+
+.hello-part-1{
+	left: 192px;
+	top: 397px;
+	z-index: 3;
+}
+
+.hello-part-2{
+	left: 653px;
+	top: 490px;
+	text-align: right;
+	z-index: 0;
+}
+
+.sports{
+	font-size: 14px;
+	color: #9071ea;
+	word-spacing: 50px;
+}
+
+.line-1{
+	position: absolute;
+	left: 580px;
+	top: 304px;
+	width: 253px;
+	height: 316px;
+	background-image: url("../pics/d_line-1.png");
+	z-index: 2;
+}
+
+.market-button{
+	position: absolute;
+	width: 311px;
+	height: 77px;
+	background-color: #5e42b0;
+	border-radius: 40px;
+	color: white;
+}
+
+.app-button{
+	left: 621px;
+	top: 773px;
+	background: #5e42b0 url('../pics/apple.png') no-repeat 40px 15px;
+}
+
+.gp-button{
+	left: 982px;
+	top: 773px;
+	background: #5e42b0 url('../pics/gp.png') no-repeat 40px 18px;
+}
+
+.sign-block-1{
+	display: inline-block;
+	margin-left: 105px;
+	margin-top: 17px;
+}
+
+.btn-first-line{
+	font-weight: 100;
+}
+
+.btn-second-line{
+	font-weight: bold;
+}	
+
+.athlets{
+	position:relative;
+}
+
+.about p{
+	font-size: 20px;
+	color: black;
+}
+
+.footballer{
+	position: absolute;
+	left: 300px;
+	top: 25px;
+	background: url('../pics/d_line-2.png') no-repeat 15px 40px;
+}
+
+.athlets-connection{
+	display: inline-block;
+	height: 405px;
+	margin-left: 1000px;
+}
+
+.block-container-collaboration{
+	border: 1px solid #f6f4fa;
+	background-color: #f6f4fa;
+	height: 257px;
+	
+}
+
+.athlets-collaboration{
+	display: inline-block;
+	margin-left: 1000px;
+	width: 615px;
+	margin-top: 20px;
+}
+
+.block-container-growth{
+	height: 295px;
+	background-color: #5e42b0;
+	border: 1px solid #5e42b0;
+	
+}
+
+.athlets-growth{
+	margin-left: 1000px;
+	margin-top: 90px;
+}
+
+.athlets-growth p{
+	color: white;
+}
+	
+
+ h1{
+	font-size: 80px;
+	color: #e7e7e7;
+	letter-spacing: -1px;
+	
+}
+.about h2{
+	font-size: 36px;
+	color: #c1c1c1;
+	word-spacing: 0px;
+}
+
+.dig{
+	vertical-align: center;
+	font-size: 18px;
+	line-height: 34px;
+	position: relative;
+	color: black;
+	vertical-align: top;
+}
+
+.dig::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	left: 0px;
+	top: 23px;
+	border: 3px solid #5e42b0;
+	border-radius: 2px;
+}
+
+.athlets-growth .dig::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	left: 0px;
+	top: 23px;
+	border: 3px solid white;
+	border-radius: 2px;
+	
+}
+
+.players{
+	position: relative;
+}
+
+.basketballer{
+	position: absolute;
+	left: 750px;
+	top: -30px;
+	background: url('../pics/d_line-3.png') no-repeat 190px 425px,
+	            url('../pics/d_line-4.png') no-repeat 630px 90px,
+				url('../pics/cross-1.png') no-repeat 296px 125px,
+				url('../pics/cross-2.png') no-repeat 321px 140px,
+				url('../pics/cross-1.png') no-repeat 802px 388px;
+}
+
+.players-block{
+	display: inline-block;
+	margin-left: 324px;
+}
+
+.container-1{
+	height: 443px;
+}
+
+.container-2{
+	height: 247px;
+	background-color: #f5f6f7;
+}
+
+.container-3{
+	height: 268px;
+	background-color: #0a0e34;
+}
+
+.container-3 p{
+	color: white;
+}
+
+.container-3 .dig{
+	color: #5e42b0;
+}
+
+.container-3 .dig::after{
+	content: "";
+	position: absolute;
+	width: 14px;
+	left: 0px;
+	top: 23px;
+	border: 3px solid white;
+	border-radius: 2px;
+}
+.players-collaboration{
+	margin-top: 30px;
+}
+
+.players-growth{
+	margin-top: 60px;
+}
+
+.works{
+	
+}
+.big-container{
+	position: relative;
+	display: flex;
+}
+
+.work-container, .work-pic{
+	width: 960px;
+	min-height: 730px;
+	margin: 0;
+}
+
+.work-content{
+	margin-top: 255px;
+	margin-left: 125px;
+}
+
+.work-content p{
+	font-size: 24px;
+}
+
+.content-2{
+	margin-left: 190px;
+	margin-top: 250px;
+}
+
+.square{
+	position: absolute;
+	width: 168px;
+	height: 168px;
+	background-color: #5e42b0;
+	text-align: center;
+	right: 50%;
+	margin-right: -84px;
+	top: 50%;
+	margin-top: -84px;
+	
+}
+
+.square-dig{
+	position: relative;
+	font-size: 24px;
+	color: white;
+	margin-top: 62px;
+}
+
+.square-dig::after{
+	content: "";
+	position: absolute;
+	width: 12px;
+	right: 50%;
+	margin-right: -8px;
+	top: 30px;
+	border: 3px solid #8f7bc8;
+	border-radius: 2px;
+}
+
+footer{
+	background: url('../pics/d_line-5.png') no-repeat 687px 209px,
+	            url('../pics/d_line-6.png') no-repeat 1021px 137px,
+				url('../pics/stadium.png') no-repeat;
+				
+	height: 959px;
+	position: relative;
+}
+
+.footer-content{
+	display: inline-block;
+	margin-top: 245px;
+	margin-left: 670px;
+}
+
+.footer-line-1{
+	font-size: 90px;
+	font-weight: bold;
+	line-height: 60px;
+	color: white;
+}
+
+.footer-line-2{
+	text-transform: uppercase;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 45px;
+	color: #a496ca;
+}
+
+.download-button{
+	position: absolute;
+	left: 504px;
+	top: 230px;
+}
+
+.contacts{
+	min-height: 168px;
+	margin-top: 434px;
+	position: relative;
+	background-color:  rgba(0, 0, 61, 0.6);
+}
+
+.soc-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 148px;
+	height: 32px;
+	left: 50%;
+	margin-left: -73px;
+	top: 50%;
+	margin-top: -16px;
+}
+
+.footer-logo{
+	margin-left: 50px;
+	margin-top:70px;
+}
+
+.footer-contacts{
+	position: absolute;
+	text-decoration: none;
+	font-size: 20px;
+	left: 1550px;
+	top: 70px;
+	font-weight: bold;
+}
+
+.footer-contacts a{
+	text-decoration: none;
+	color: white;
+	
+}
+
+footer .app-button{
+	left: 621px;
+	top: 523px;
+	background: #5e42b0 url('../pics/apple.png') no-repeat 40px 15px;
+}
+
+footer .gp-button{
+	left: 982px;
+	top: 523px;
+	background: #5e42b0 url('../pics/gp.png') no-repeat 40px 18px;
+}	
+	
+
+
+
+
