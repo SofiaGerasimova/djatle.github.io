@@ -420,7 +420,7 @@ footer {
     background-image: url('../img/iphone-screen-3-3@2x.png');
   }
 }
-@media(max-width: 721px) {
+@media(max-width: 981px) {
   body {
     min-width: 400px;
     max-width: 720px;
