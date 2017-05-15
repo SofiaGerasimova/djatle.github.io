@@ -79,5 +79,5 @@ function hideFunc(a){
 		
 	, 2000);
 	
-	
+	alert($(window).width());
 });
