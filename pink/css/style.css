@@ -424,6 +424,8 @@ footer {
   body {
     min-width: 400px;
     max-width: 720px;
+    padding: 0;
+    width: 100%;
   }
   header {
     background: url('../img/iphone-hand-2@1x.png') no-repeat, url('../img/background-1@1x.jpg') no-repeat;
