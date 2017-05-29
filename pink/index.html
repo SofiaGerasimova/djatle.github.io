@@ -5,6 +5,8 @@
 		<title>Pink</title>
 		<link href="#" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/mob_slider.css">
+		
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="#">
 		<script
@@ -76,7 +78,10 @@
 			<div class="header-content-container">
 				<div class="header-content-block">
 					<h1>Взгляните на жизнь иначе!</h1>
-					
+					<div class="mobile-hand-container">
+						<img src="img/iphone-hand-1.png" srcset="img/iphone-hand-1@2x.png 2x, img/iphone-hand-1@3x.png 3x">
+					</div>
+					<div class="orthopedia-container">
 					<div class="download-btn"><a href="#">Скачать приложение</a></div>
 					
 					<div class="store-container">
@@ -137,7 +142,7 @@
 						Доступно для iPhone, iPad, Android, Windows phone, Mac OS, Windows
 					</p>
 				</div>
-				
+				</div>
 				<div class="header-hand-block">
 					<div class="hand-image"></div>
 				</div>
@@ -147,7 +152,10 @@
 		<div class="main-content">
 			<div class="promo-container">
 				<h1 class="promo-header">Устали от серости мегаполиса? Нам есть что вам предложить!</h1>
-				
+				<div class="mobile-promo-header">
+					<p>Устали от серости мегаполиса?</p>
+					<p>Нам есть что вам предложить!</p>
+				</div>
 				<div class="phone-container">
 					
 					<div class="phone-frame">
@@ -223,24 +231,123 @@
 					
 					</div>
 				</div>
-			</div>
+			
 			
 			<div class="comment-container">
 				<div class="quotes-block"><span>“</span></div>
-				<blockquote class="user-comment">
-					Приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! 
-					А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
-				</blockquote>
-				<div class="user-block">
-					<h2 class="user-name">Николай Петров</h2>
-					<span class="user-info">25 лет, водитель трамвая</span>
-				</div>
+					
+					<div class="viewport  main-slider">	
+						<ul class="slidewrapper" data-current="0">
+						<li class="slide  slide-first">	
+							<div class="comment-wrapper">	
+								<blockquote class="user-comment">
+									Приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! 
+									А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+								</blockquote>
+								<div class="user-block">
+									<h2 class="user-name">Николай Петров</h2>
+									<span class="user-info">25 лет, водитель трамвая</span>
+								</div>
+							</div>	
+						</li >	
+						
+						<li class="slide  slide-second">
+						<div class="comment-wrapper">
+							<blockquote class="user-comment">
+								Супер-приложение! Мне его порекомендовал мой психиатр. Я сначала не верил, но резултат превзошел
+								все ожидания. Я вылечился от многолетней клинической депрессии!
+							</blockquote>
+							<div class="user-block">
+								<h2 class="user-name">В. Лоханкин</h2>
+								<span class="user-info">38 лет, мармеладчик-пастильщик</span>
+							</div>
+						</div>	
+						</li>
+						
+						<li class="slide  slide-third">
+						<div class="comment-wrapper">
+							<blockquote class="user-comment">
+								ОТличное приложение за небольшие деньги. Очень помогает по-другому взглянуть
+								на привычные повседневные вещи. Отлично поднимает настроение. Спасибо авторам.
+							</blockquote>
+							<div class="user-block">
+								<h2 class="user-name">Билл Вороткин</h2>
+								<span class="user-info">52 года, сортировщик карандашной массы</span>
+							</div>
+						</div>	
+						</li>
+						</ul>	
+					</div>
+				<!---------------------------!-->	
+					<div class="mobile-slider">
+						<div class="wrapper">
+						<input type="radio" name="point" id="slide1" checked>
+						<input type="radio" name="point" id="slide2">
+						<input type="radio" name="point" id="slide3">
+						
+						<div class="slider">
+							<div class="slides slide1">
+								<div class="comment-wrapper">	
+								<blockquote class="user-comment">
+									Приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! 
+									А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
+								</blockquote>
+								<div class="user-block">
+									<h2 class="user-name">Николай Петров</h2>
+									<span class="user-info">25 лет, водитель трамвая</span>
+								</div>
+								</div>	
+							</div>
+							
+							<div class="slides slide2">
+								<div class="comment-wrapper">
+									<blockquote class="user-comment">
+										Супер-приложение! Мне его порекомендовал мой психиатр. Я сначала не верил, но резултат превзошел
+										все ожидания. Я вылечился от многолетней клинической депрессии!
+									</blockquote>
+								<div class="user-block">
+									<h2 class="user-name">В. Лоханкин</h2>
+									<span class="user-info">38 лет, мармеладчик-пастильщик</span>
+								</div>
+								</div>	
+							
+							</div>
+							
+							<div class="slides slide3">
+								<div class="comment-wrapper">
+									<blockquote class="user-comment">
+										ОТличное приложение за небольшие деньги. Очень помогает по-другому взглянуть
+										на привычные повседневные вещи. Отлично поднимает настроение. Спасибо авторам.
+									</blockquote>
+								<div class="user-block">
+									<h2 class="user-name">Билл Вороткин</h2>
+									<span class="user-info">52 года, сортировщик карандашной массы</span>
+								</div>
+							</div>	
+							
+							</div>
+							
+						</div>
+						<div class="controls">
+							<label for="slide1"></label>
+							<label for="slide2"></label>
+							<label for="slide3"></label>
+							
+						</div>
+					</div>
+					</div>
+				<!------------------------------!-->		
 				<div class="arrow  left-arrow"></div>
 				<div class="arrow  right-arrow"></div>
 				
 			</div>
 			
 			<div class="price-container">
+				
+					<input type="radio" name="t-point" id="t1">
+					<input type="radio" name="t-point" id="t2">
+					<input type="radio" name="t-point" id="t3">
+				
 				<table class="price-table">
 					<tr>
 						<th class="empty-cell"></th>
@@ -269,17 +376,9 @@
 							Розовый фильтр
 						</td>
 						
-						<td class="feauture-exist">
-							yes
-						</td>
-						
-						<td class="feauture-exist">
-							yes
-						</td>
-						
-						<td class="feauture-exist">
-							yes
-						</td>
+						<td class="feauture-exist">yes</td>
+						<td class="feauture-exist">yes</td>
+						<td class="feauture-exist">yes</td>
 					</tr>
 					
 					<tr>
@@ -287,17 +386,9 @@
 							Смайлики
 						</td>
 						
-						<td class="feauture-exist">
-							no
-						</td>
-						
-						<td class="feauture-exist">
-							yes
-						</td>
-						
-						<td class="feauture-exist">
-							yes
-						</td>
+						<td class="feauture-exist">no</td>
+						<td class="feauture-exist">yes</td>
+						<td class="feauture-exist">yes</td>
 					</tr>
 					
 					<tr>
@@ -305,19 +396,17 @@
 							Комментарии
 						</td>
 						
-						<td class="feauture-exist">
-							no
-						</td>
-						
-						<td class="feauture-exist">
-							no
-						</td>
-						
-						<td class="feauture-exist">
-							yes
-						</td>
+						<td class="feauture-exist">no</td>
+						<td class="feauture-exist">no</td>
+						<td class="feauture-exist">yes</td>
 					</tr>
 				</table>
+				<div class="t-controls">
+					<label for="t1"></label>
+					<label for="t2"></label>
+					<label for="t3"></label>
+							
+				</div>
 			</div>
 			
 			<div class="contacts-container">
@@ -352,7 +441,7 @@
 			<div class="map-container">
 				<div class="decor-triangle-block"></div>
 				<div class="map-block">
-					<!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kzS4iTBhjwGrrthMdD2-1bFEhXU" width="100%" height="480"></iframe> !-->
+					 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kzS4iTBhjwGrrthMdD2-1bFEhXU" width="100%" height="480" class="map-frame"></iframe> 
 				</div>
 			</div>
 		</div>
@@ -363,9 +452,13 @@
 					<img src="img/Pink-logo-footer-3@1x.png" srcset="img/Pink-logo-footer-3@2x.png 2x">
 				</a>
 				
-				
-			
+				<a href="#" class="footer-mobile-logo-link">
+					<img src="img/Pink-logo-footer-2@1x.png" srcset="img/Pink-logo-footer-2@2x.png 2x">
+				</a>
 			</div>
+			
+			
+			
 			<div class="soc-container  footer-block">
 				<div class="soc-block">
 					<a href="#" class="soc-link">
@@ -453,6 +546,25 @@
 			</div>
 		</footer>
 		
+		<div class="mark yes-mark" style="display: none">
+		<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="30.375px" height="21.688px" viewBox="0 0 30.375 21.688" enable-background="new 0 0 30.375 21.688" xml:space="preserve" >
+			<path d="M29.936,0.439c-0.586-0.586-1.535-0.586-2.121,0L10.188,18.066l-7.627-7.627c-0.586-0.586-1.535-0.586-2.121,0
+			s-0.586,1.535,0,2.121l8.688,8.688c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439L29.936,2.561
+			C30.521,1.975,30.521,1.025,29.936,0.439z"/>
+		</svg>
+	    </div>
+		
+		<div class="no-mark  mark" style="display: none">
+		<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+		<path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439
+			c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121
+			c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439
+			s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+		</svg>
+
+		</div>
 	</body>
 	<script src="js/script.js"></script>
 	
