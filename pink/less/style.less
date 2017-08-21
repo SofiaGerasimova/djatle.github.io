@@ -1,0 +1,627 @@
+@import "variables.less";
+ 
+body{
+	max-width: 1440px;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+
+header{
+	
+	background: url('../img/background-2@1x.jpg') no-repeat;
+	background-size: cover;
+	
+}
+
+nav{
+	display: flex;
+	
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 17%;
+	padding-right: 17%;
+	background-color:  rgba(6, 17, 34, 0.5);
+	
+}
+
+.logo-container{
+	width: 12%;
+	
+	background: url('../img/logo@1x.png') no-repeat;
+	background-size: contain;
+	background-position: center 30%;
+	a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.mobile-menu{
+	display: none;
+}
+
+.mobile-menu-btn, .menu-close-btn{
+	display: none;
+	
+}
+
+.main-menu{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	min-width: 65%;
+	padding: 0;
+	
+}
+
+.menu-item{
+	
+}
+
+.menu-link{
+	text-decoration: none;
+	color: white;
+	position: relative;
+}
+
+
+
+.header-content-container{
+	
+	padding-left: 17%;
+	display: flex;
+	
+}
+
+.header-content-block{
+	color: white;
+	width: 25%;
+	padding-top: 80px;
+	padding-bottom: 130px;
+	a{
+		text-decoration: none;
+		color: white;
+	}
+	
+	h1{
+		font-size: 50px;
+		text-align: center;
+		font-weight: normal;
+		padding-bottom: 40px;
+	}
+}
+
+.mobile-hand-container{
+	display: none;
+}
+
+.download-btn{
+	width: 100%;
+	border: 3px solid white;
+	border-radius: 20px;
+	text-align: center;
+	
+	
+	a{
+		display: block;
+		height: 100%;
+		font-size: 21px;
+		padding: 7px;
+		
+		
+		
+	}
+}
+
+.store-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	
+}
+
+.store-block:hover{
+	transform: scale(1.2);
+	transition: transform 0.5s;
+
+}
+
+.promo-description{
+	text-align: center;
+	font-size: 18px;
+	
+}
+
+.header-hand-block{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.hand-image{
+	
+	width: 610px;
+	height: 645px;
+	background: url('../img/iphone-hand-3c@1x.png') no-repeat;
+	background-size: cover;
+}
+
+.promo-container{
+	padding-top: 80px;
+}
+
+.promo-header{
+	text-align: center;
+	width: 52%;
+	margin: 0 auto;
+	font-size: 50px;
+	font-weight: normal;
+	color: @font-grey;
+}
+
+.mobile-promo-header{
+	display: none;
+}
+
+.phone-container{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 17%;
+	padding-right: 17%;
+	padding-top: 40px;
+	background: url('../img/bgn-1.png') no-repeat 0 45px;
+	background-size: 100%;
+	
+}
+
+.phone-frame{
+	display: none;
+}
+
+.phone-block{
+	width: 28%;
+}
+
+.phone-screen-block{
+	width: 100%;
+	height: 302px;
+}
+
+.screen-1{
+	background: url('../img/iphone-screen-3-1@1x.png') no-repeat center 0;
+}
+
+.screen-2{
+	background: url('../img/iphone-screen-3-2@1x.png') no-repeat center 0;
+}
+
+.screen-3{
+	background: url('../img/iphone-screen-3-3@1x.png') no-repeat center 0;
+}
+
+.phone-block-header{
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+
+.phone-block-description{
+	text-align: center;
+	color: @font-grey;
+	width: 75%;
+	margin: 0 auto;
+}
+
+.effect-container{
+	display: flex;
+	padding-left: 17%;
+	padding-right: 17%;
+	padding-top: 65px;
+	padding-bottom: 60px;
+	background-color: @grey;
+	
+}
+
+.clock-block{
+	position: relative;
+}
+
+.clock-content{
+	position: absolute;
+	width: 225px;
+	height: 225px;
+	font-size: 120px;
+	font-weight: bold;
+	color: @pink;
+	border: 10px solid @pink;
+	border-radius: 50%;
+	padding-top: 27px;
+	padding-left: 35px;
+	box-sizing: border-box;
+	top: 84px;
+	left: 37px;
+}
+
+.clock{
+	fill: @dark-grey; 
+}
+
+.effect-block{
+	
+	padding-left: 70px;
+	padding-top: 50px;
+	font-size: 17px;
+}
+
+.effect-description{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 17px;
+}
+
+.effect-link a{
+	color: @pink;
+}
+
+.comment-container{
+	position: relative;
+}
+
+.comment-content-container{
+	display: flex;
+	border: 1px solid red;
+	width: 680px;
+	margin: 0 auto;
+}
+
+.quotes-block{
+
+	text-align: center;
+}
+
+.quotes-block span{
+	display: inline-block;
+	vertical-align: bottom;
+	font-size: 240px;
+	line-height: 26px;
+	padding-top: 120px; 
+	color: @dark-grey;	
+	
+}
+
+/*--------правила для слайдера-------*/
+
+.viewport{
+	overflow: hidden;
+	position: relative;
+	width: 680px;
+	height: 210px;
+	margin: 0 auto;
+	
+	
+}
+
+.slidewrapper{
+	position: absolute;
+    left: 0;
+    top: 0;
+    height: 150px;
+    margin: 0;
+    padding: 0; 
+	display: flex;
+	
+}
+
+.slide{
+	width: 680px;
+    height: 100px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-slider{
+	display: none;
+}
+/*----------------------------------------*/
+.user-comment{
+	width: 60%;
+	margin: 0 auto;
+	font-size: 17px;
+	text-align: center;
+}
+
+.user-block{
+	width: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	.user-name{
+		margin-bottom: 10px;
+		
+	}
+	
+}
+
+.user-info{
+	text-align: center;
+}
+
+.arrow{
+	position: absolute;
+	width: 22px;
+	height: 42px;
+	top: 40%;
+}
+
+.arrow:hover{
+	cursor: pointer;
+	transform: scale(1.2);
+	transition: transform 0.5s;
+}
+
+.arrow:active{
+	transform: scale(1.5);
+} 
+
+.left-arrow{
+	left: 17%;
+	background: url('../img/left-arrow.png') no-repeat;
+	background-size: cover;
+}
+
+.right-arrow{
+	left: 83%;
+	background: url('../img/right-arrow.png') no-repeat;
+}
+
+
+/*--------------Таблица с фишками---------------*/ 
+
+.price-container input{
+	display: none;
+}
+
+.price-container{
+	padding-left: 17%;
+	padding-right: 17%;
+	padding-top: 155px;
+	padding-bottom: 95px;
+	background: url('../img/bgn-1.png');
+}
+
+.price-table{
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+
+td{
+	width: 25%;
+	background-color: white;
+	text-align: center;
+}
+
+
+
+th{
+	background-color: #283645;
+	color: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	span{
+		display: block;
+	}
+}
+
+th:not(:last-child){
+	border-right: 1px solid white;
+}
+
+.hit-cell{
+	overflow: hidden;
+		
+}
+
+.mark-wrapper{
+	position: relative;
+}
+
+.hit-mark{
+	color: white;
+	font-size: 14px;
+	background: @pink;
+	transform: rotate(-45deg);
+	position: absolute;
+	top: -7px;
+	left: -28px;
+	width: 110px;
+	height: 25px;
+	line-height: 20px;
+}
+
+.empty-cell{
+	background: none;	
+}
+
+.cell-header{
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+
+.cell-content{
+	font-size: 24px;
+	font-weight: normal;
+	color: #8c949c;
+}
+
+.feauture-name{
+	font-size: 18px;
+	color: @font-grey;
+	padding-left: 7px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+}
+
+td{
+	border: 2px solid @dark-grey;
+}
+/*-------------------------------------*/
+
+.contacts-container{
+	padding-top: 75px;
+}
+
+.contacts-header{
+	.promo-header;
+	width: 45%;
+}
+
+.contacts-block-container{
+	display: flex;
+	justify-content: space-between;
+	width: 58%;
+	margin: 0 auto;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+
+.contact-block{
+	width: 32%;
+}
+
+.contact-block-header{
+	text-align: center;
+	font-size: 18px;
+}
+
+.contact-block-content{
+	margin: 0 auto;
+	text-align: center;
+	width: 67%;
+	color: @pink;
+}
+
+.map-container{
+}
+
+.map-block{
+	width: 100%;
+}
+
+.map-frame{
+	border: none;
+	box-sizing: border-box;
+}
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 65px;
+	padding-bottom: 65px;
+	padding-left: 17%;
+	padding-right: 17%;
+	
+}
+
+.footer-mobile-logo-link{
+	display: none;
+}
+
+.footer-block{
+	display: flex;
+}
+
+.soc-container{
+	width: 190px;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 60px;
+	
+}
+
+.soc-block{
+	
+	width: 50px;
+	height: 50px;
+	border: 3px solid @grey;
+	border-radius: 50%;
+}
+
+.soc-link{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	vertical-align: middle;
+	fill: @pink;
+}
+
+.copyright-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 210px;
+	
+}
+
+.copyright-logo a{
+	fill: @pink;
+}
+
+/**************Финтифлюшки*************/
+
+.menu-link:hover::after{
+	content: "";
+	position: absolute;
+	width: 98%;
+	border: 1px solid white;
+	top: 30px;
+	left: 0;
+}
+
+.menu-link:active{
+	color: #6a757f; 
+}
+
+.download-btn:hover{
+	background-color: white;
+}
+
+.download-btn a:hover{
+	color: @pink;
+}
+
+.download-btn a:active{
+	color: #f1becc; 
+}
+
+.soc-block:hover{
+	border-color: @font-grey;
+}
+
+.copyright-link:hover, .copyright-logo:hover{
+	fill: @font-grey;
+}
+	
+
+@import "retina.less";
+@import "1200p.less";
+@import "480p.less"; 
+ 
+
+

@@ -1,0 +1,257 @@
+@media only screen and(max-width: 699px){
+	
+	body{
+		max-width: 700px;
+		min-width: 480px;
+		
+	}
+	header{
+		background: url("../img/background-1@1x.jpg") no-repeat;
+		background-size: cover;
+		background-position: center bottom;
+		
+	}
+	
+	.mobile-menu{
+		
+	}
+	
+	.header-content-container{
+		padding: 0;
+		
+	}
+	
+	.header-content-block{
+		
+		width: 100%;
+		padding: 0;
+		padding-top: 40px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		
+		
+	}
+	
+	.header-content-block h1{
+		font-size: 24px;
+		margin: 0;
+	}
+	
+	.mobile-hand-container{
+		display: block;
+		
+		img{
+			height: 100%;
+		}
+		
+	}
+	
+	.orthopedia-container{
+		width: 100%;
+		background-color: #1d2631;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.download-btn{
+		width: 80%;
+		border-radius: 32px;
+		font-size: 18px;
+		a{
+			display: block;
+			height: 100%;
+			padding-bottom: 16px;
+		    padding-top: 11px;
+		}
+		
+	}
+	
+	.store-container{
+		width: 60%;
+	}
+	
+	.promo-description{
+		font-size: 16px;
+		width: 60%;
+	}
+	
+	.promo-header{
+		display: none;
+	}
+	
+	.promo-container{
+		padding-top: 25px;
+	}
+	
+	.mobile-promo-header{
+		display: block;
+		width: 50%;
+		font-size: 30px;
+		color: @font-grey;
+		margin: 0 auto;
+		
+		p{
+			text-align: center;
+		}
+	}
+	
+	.phone-container{
+		flex-direction: column;
+		align-items: center;
+		padding-left: 0;
+		padding-bottom: 0;
+		padding-top: 100px;
+		background-size: cover;
+		background-position: top;
+		
+	}
+	
+	.phone-block{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		p{
+			text-align: center;
+			font-size: 18px;
+		}
+	}
+	
+	.phone-block-header{
+		
+		font-size: 27px;
+		text-align: center;
+	}
+	
+	.phone-frame{
+		position: static;
+		height: 380px;
+		order: 4;
+		align-self: center;
+		background-size: 165px auto, 200px auto;
+	}
+	
+	.effect-container{
+		display: none;
+	}
+
+/*оформление таблицы в виде простого слайдера*/	
+	.price-container{
+		
+		
+		margin-top: 35px;
+		position: relative;
+		overflow: hidden;
+		height: 190px;
+		padding-bottom: 130px;
+		padding-top: 120px;
+	}
+	
+	.price-table{
+		position: absolute;
+		width: 350%;
+		left: -170%;
+	}
+	
+	.feauture-name{
+		border: none;
+		background: @grey;
+	}
+	
+	#t1:checked~ .price-table{
+		transition: ease-in-out .5s;
+		left: -80%;
+	}
+	
+	#t2:checked~ .price-table{
+		transition: ease-in-out .5s;
+		left: -170%;
+	}
+	
+	#t3:checked~ .price-table{
+		transition: ease-in-out .5s;
+		left: -256%;
+	}
+	
+	.price-container input{;}
+	
+	.t-controls{
+		position: absolute;
+		top: 87%;
+		left: 40%;
+	}
+	
+	.price-container label{
+			cursor: pointer;
+			display: inline-block;
+			height: 8px;
+			margin: 25px 12px 0 16px;
+			position: relative;
+			width: 8px;
+			border-radius: 50%;
+			transition: background ease-in-out .5s;
+			
+	}
+	
+	.price-container label::after{
+		border: 2px solid #ddd;
+		content: " ";
+		display: block;
+		height: 12px;
+		left: -4px;
+		position: absolute;
+		top: -4px;
+		width: 12px;
+		border-radius: 50%;
+		
+	}
+	
+	.wrapper label:hover, 
+	#t1:checked ~ .t-controls label:nth-of-type(1),
+	#t2:checked ~ .t-controls label:nth-of-type(2),
+	#t3:checked ~ .t-controls label:nth-of-type(3)
+{
+	background: #ddd;
+}
+	
+/*-------------------------------------*/
+     .contacts-block-container{
+		 width: 100%;
+		 flex-direction: column;
+		 align-items: center;
+		 font-size: 24px;
+		
+	 }
+	 
+	 .contact-block{
+		  padding-bottom: 20px;
+	 }
+	 
+	 .map-container{
+		 position: relative;
+	 }
+	 
+	 .map-container::before{
+		 content: "";
+		 position: absolute;
+		 width: 100%;
+		 height: 130px;
+		 background: url('../img/triangle.png') no-repeat;
+		 background-position: top;
+		 background-size: 100% 130px;
+		 z-index: 1;
+		 
+		 
+	 }
+	 
+	 footer{
+		 display: none;
+	 }
+	 
+	 
+			
+}

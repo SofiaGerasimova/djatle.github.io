@@ -8,7 +8,11 @@ header {
   background-size: cover;
 }
 nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 15px;
@@ -37,7 +41,11 @@ nav {
 }
 .main-menu {
   list-style: none;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   min-width: 65%;
   padding: 0;
@@ -47,16 +55,10 @@ nav {
   color: white;
   position: relative;
 }
-.menu-link:hover::after {
-  content: "";
-  position: absolute;
-  width: 98%;
-  border: 1px solid white;
-  top: 30px;
-  left: 0;
-}
 .header-content-container {
   padding-left: 17%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .header-content-block {
@@ -82,31 +84,50 @@ nav {
   width: 100%;
   border: 3px solid white;
   border-radius: 20px;
-  font-size: 21px;
   text-align: center;
-  padding-top: 7px;
-  padding-bottom: 7px;
 }
 .download-btn a {
   display: block;
   height: 100%;
+  font-size: 21px;
+  padding: 7px;
 }
 .store-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 70px;
   padding-bottom: 50px;
 }
+.store-block:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
 .promo-description {
   text-align: center;
   font-size: 18px;
 }
 .header-hand-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .hand-image {
@@ -130,7 +151,11 @@ nav {
   display: none;
 }
 .phone-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: 17%;
   padding-right: 17%;
@@ -171,6 +196,8 @@ nav {
   margin: 0 auto;
 }
 .effect-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   padding-left: 17%;
   padding-right: 17%;
@@ -216,6 +243,8 @@ nav {
   position: relative;
 }
 .comment-content-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   border: 1px solid red;
   width: 680px;
@@ -247,6 +276,8 @@ nav {
   height: 150px;
   margin: 0;
   padding: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .slide {
@@ -270,8 +301,14 @@ nav {
 .user-block {
   width: 100%;
   margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .user-block .user-name {
@@ -285,6 +322,20 @@ nav {
   width: 22px;
   height: 42px;
   top: 40%;
+}
+.arrow:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+.arrow:active {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
 }
 .left-arrow {
   left: 17%;
@@ -337,6 +388,8 @@ th:not(:last-child) {
   color: white;
   font-size: 14px;
   background: #d22856;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
   position: absolute;
   top: -7px;
@@ -381,7 +434,11 @@ td {
   width: 45%;
 }
 .contacts-block-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   width: 58%;
   margin: 0 auto;
@@ -409,7 +466,11 @@ td {
   box-sizing: border-box;
 }
 footer {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 65px;
   padding-bottom: 65px;
@@ -420,11 +481,17 @@ footer {
   display: none;
 }
 .footer-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
 }
 .soc-container {
   width: 190px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: 60px;
 }
@@ -435,24 +502,66 @@ footer {
   border-radius: 50%;
 }
 .soc-link {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   height: 100%;
   vertical-align: middle;
   fill: #d22856;
 }
 .copyright-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 210px;
 }
 .copyright-logo a {
   fill: #d22856;
 }
-@media (min-resolution: 1.5dppx) {
+/**************Финтифлюшки*************/
+.menu-link:hover::after {
+  content: "";
+  position: absolute;
+  width: 98%;
+  border: 1px solid white;
+  top: 30px;
+  left: 0;
+}
+.menu-link:active {
+  color: #6a757f;
+}
+.download-btn:hover {
+  background-color: white;
+}
+.download-btn a:hover {
+  color: #d22856;
+}
+.download-btn a:active {
+  color: #f1becc;
+}
+.soc-block:hover {
+  border-color: #283645;
+}
+.copyright-link:hover,
+.copyright-logo:hover {
+  fill: #283645;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   header {
     background: url('../img/background-1@2x.jpg');
     background-size: 100%;
@@ -498,6 +607,8 @@ footer {
     margin-top: 10px;
   }
   nav {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     position: relative;
     padding: 0;
@@ -514,10 +625,24 @@ footer {
   .menu-item {
     font-size: 17px;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
     background-color: #283645;
     border-bottom: 1px solid black;
+  }
+  .menu-item a {
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .menu-link:hover::after {
+    content: "";
+    border: none;
+  }
+  .menu-item:hover {
+    background-color: #dedede;
+  }
+  .menu-item:hover a {
+    color: #283645;
   }
   .mobile-menu-btn {
     display: block;
@@ -536,6 +661,7 @@ footer {
     left: 87%;
     top: 32%;
     display: none;
+    top: 10%;
   }
   .header-content-container {
     padding-left: 30px;
@@ -553,7 +679,11 @@ footer {
     width: 87%;
   }
   .phone-container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
     align-items: flex-end;
     background-size: cover;
     padding: 0;
@@ -622,16 +752,22 @@ footer {
   }
   .contacts-block-container {
     width: 52%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
   .contact-block {
     width: 50%;
   }
   .adress-block {
+    -webkit-order: 3;
+    -ms-flex-order: 3;
     order: 3;
     margin: 0 auto;
   }
   .mail-block {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
     order: 2;
   }
   footer {
@@ -651,6 +787,12 @@ footer {
     font-size: 14px;
   }
 }
+@media only screen and (max-width: 980px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 980px) and (min-resolution: 1.5dppx) {
+  .logo-container {
+    background: url('../img/Pink-logo-2@2x.png') no-repeat;
+    background-size: contain;
+  }
+}
 @media only screen and (max-width: 699px) {
   body {
     max-width: 700px;
@@ -668,11 +810,18 @@ footer {
     width: 100%;
     padding: 0;
     padding-top: 40px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
-    border: 1px solid yellow;
   }
   .header-content-block h1 {
     font-size: 24px;
@@ -689,8 +838,14 @@ footer {
     background-color: #1d2631;
     padding-top: 20px;
     padding-bottom: 20px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .download-btn {
@@ -728,7 +883,11 @@ footer {
     text-align: center;
   }
   .phone-container {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     padding-left: 0;
     padding-bottom: 0;
@@ -737,8 +896,14 @@ footer {
     background-position: top;
   }
   .phone-block {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .phone-block p {
@@ -752,7 +917,12 @@ footer {
   .phone-frame {
     position: static;
     height: 380px;
+    -webkit-order: 4;
+    -ms-flex-order: 4;
     order: 4;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
     background-size: 165px auto, 200px auto;
   }
@@ -772,6 +942,10 @@ footer {
     position: absolute;
     width: 350%;
     left: -170%;
+  }
+  .feauture-name {
+    border: none;
+    background: #f2f2f2;
   }
   #t1:checked ~ .price-table {
     transition: ease-in-out 0.5s;
@@ -820,7 +994,11 @@ footer {
   /*-------------------------------------*/
   .contacts-block-container {
     width: 100%;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 24px;
   }

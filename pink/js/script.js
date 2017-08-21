@@ -16,6 +16,7 @@ $(document).ready(function(){
 		blockFunc(mobile_menu);
 		hideFunc($(this));
 		blockFunc(cl_btn);
+		$("nav").css("backgroundColor","#283645");
 		
 	}
 	
@@ -23,6 +24,7 @@ $(document).ready(function(){
 		hideFunc(mobile_menu);
 		hideFunc(cl_btn);
 		blockFunc(show_btn);
+		$("nav").css("backgroundColor","rgba(6, 17, 34, 0.5)");
 	}
 	
 $(window).resize(function(){
@@ -36,8 +38,9 @@ $(window).resize(function(){
 			hideFunc(cl_btn);
 			
 		}
-		
-		else{
+					
+	    if(cl_btn.css("display") == "none" && w_width < 980){
+			
 			blockFunc(show_btn);
 		}
 	
