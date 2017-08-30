@@ -49,9 +49,6 @@ body {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1400px) {
-  body{
-     border: 1px solid red;
-  }
   .app-icon {
     width: 198px;
   }
