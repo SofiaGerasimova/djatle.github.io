@@ -1,0 +1,239 @@
+body {
+  margin: 0 auto;
+}
+.main-content {
+  padding-left: 5%;
+  padding-bottom: 4%;
+  background: url('../img/gradient-bg.png') no-repeat, url('../img/bg-ipad.png') no-repeat;
+  background-size: cover;
+  padding-top: 660px;
+}
+.promo-container {
+  display: flex;
+  justify-content: space-around;
+}
+.middle-icon {
+  display: none;
+}
+.small-icon {
+  display: none;
+}
+.phone-block {
+  padding-left: 300px;
+  padding-top: ;
+  background: url('../img/phone-screen-big.png') no-repeat center, url('../img/phone-frame-big.png') no-repeat;
+  background-size: 80%, 100%;
+}
+.promo-content {
+  padding-left: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.promo-content p {
+  margin: 0;
+}
+.promo-text {
+  font-family: Catamaran, sans-serif;
+  font-size: 108px;
+  line-height: 120px;
+  color: white;
+  text-transform: uppercase;
+}
+.trial-text {
+  font-family: Rubik, sans-serif;
+  font-size: 92px;
+  line-height: 65px;
+  color: #ffa000;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1400px) {
+  .app-icon {
+    width: 198px;
+  }
+  .promo-text {
+    font-size: 99px;
+    line-height: 120px;
+  }
+  .trial-text {
+    font-size: 73px;
+    line-height: 50px;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1080px) {
+  .main-content {
+    padding-top: 1395px;
+    background: url('../img/gradient-bg.png') no-repeat, url('../img/crop-2.png') no-repeat;
+    background-size: cover;
+  }
+  .promo-content {
+    justify-content: flex-start;
+  }
+  .promo-content p {
+    margin-top: 15px;
+  }
+  .phone-block {
+    padding-left: 237px;
+  }
+  .promo-text {
+    font-size: 75px;
+    line-height: 75px;
+  }
+  .trial-text {
+    font-size: 50px;
+    line-height: 25px;
+  }
+  .app-icon {
+    width: 200px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .main-content {
+    padding-top: 585px;
+  }
+  .promo-content p {
+    margin: 0;
+  }
+  .promo-text {
+    font-size: 50px;
+    line-height: 75px;
+  }
+  .trial-text {
+    font-size: 38px;
+    line-height: 25px;
+  }
+  .app-icon {
+    width: 155px;
+  }
+  .phone-block {
+    padding-left: 200px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 750px) {
+  body {
+    width: 750px;
+  }
+  .main-content {
+    padding-top: 870px;
+    padding-bottom: 100px;
+    background: url('../img/bgrnd-md-crop.png') no-repeat;
+    background-size: cover;
+  }
+  .promo-content {
+    padding-left: 230px;
+    box-sizing: border-box;
+  }
+  .promo-content p {
+    padding-top: 0;
+    margin-top: 20px;
+  }
+  .phone-block {
+    display: none;
+  }
+  .large-icon {
+    display: none;
+  }
+  .middle-icon {
+    display: block;
+  }
+  .promo-text {
+    font-size: 54px;
+    line-height: 60px;
+  }
+  .trial-text {
+    font-size: 46px;
+    line-height: 23px;
+  }
+  .app-icon {
+    width: 113px;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 640px) and (height: 1136px) {
+  body {
+    width: 640px;
+  }
+  .main-content {
+    padding-top: 745px;
+    padding-bottom: 80px;
+    background: url('../img/bgrnd-md-crop.png') no-repeat;
+    background-size: cover;
+  }
+  .middle-icon {
+    display: none;
+  }
+  .large-icon {
+    display: none;
+  }
+  .small-icon {
+    display: block;
+  }
+  .app-icon {
+    width: 102px;
+  }
+  .promo-content {
+    padding-left: 215px;
+  }
+  .promo-content p {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .promo-text {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .trial-text {
+    font-size: 40px;
+    line-height: 20px;
+  }
+}
+@media only screen and (max-width: 640px) and (height: 960px) {
+  body {
+    width: 640px;
+  }
+  .main-content {
+    padding-top: 745px;
+    padding-bottom: 80px;
+    background: url('../img/bgrnd-md-crop.png') no-repeat;
+    background-size: cover;
+  }
+  .middle-icon {
+    display: none;
+  }
+  .large-icon {
+    display: none;
+  }
+  .small-icon {
+    display: block;
+  }
+  .app-icon {
+    width: 102px;
+  }
+  .promo-content {
+    padding-left: 215px;
+  }
+  .promo-content p {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .promo-text {
+    font-size: 44px;
+    line-height: 50px;
+  }
+  .trial-text {
+    font-size: 40px;
+    line-height: 20px;
+  }
+}
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
