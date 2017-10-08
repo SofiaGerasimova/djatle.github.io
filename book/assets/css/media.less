@@ -1,0 +1,428 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and(min-width : 1920px) {
+	body{
+		min-width: 1920px;
+	}
+
+	.left-arrow{
+		left: 17%;
+	}
+
+	.right-arrow{
+		left: 81%;
+	}
+}
+
+@media only screen and (max-width : 1680px) {
+	body{
+		min-width: 1680px;
+	}
+
+	.promo-container{
+		width: 70%;
+	}
+
+	.description-block h2{
+		font-size: 50px;
+	}
+
+	.post-description::after{
+		content: "";
+		position: absolute;
+		width: 150px;
+		height: 120px;
+		top: -90px;
+		left: 66%;
+		background: url('../img/arrow.png') no-repeat center;
+		}
+
+	.left-arrow{
+		left: 10%;
+	}
+
+	.right-arrow{
+		left: 87%;
+	}	
+}
+
+@media only screen and (max-width : 1440px) {
+	body{
+		min-width: 1420px;
+	}
+
+	.promo-container{
+		width: 80%;
+	}
+
+	.post-promo-block h2{
+		width: 33%;
+	}
+
+	.left-arrow{
+		left: 6%;
+	}
+
+	.right-arrow{
+		left: 91%;
+	}	
+}
+
+@media only screen and (max-width : 1366px) {
+	body{
+		min-width: 1366px;
+	}
+
+	.promo-container{
+		width: 85%;
+	}
+
+	.post-promo-block h2{
+		width: 35%;
+	}
+}
+
+@media only screen and (max-width : 1280px) {
+	body{
+		min-width: 1280px;
+	}
+
+	.promo-container{
+		width: 90%;
+	}
+
+	.post-promo-block h2{
+		width: 38%;
+	}
+
+	.post-description::after{
+		content: "";
+		position: absolute;
+		width: 150px;
+		height: 120px;
+		top: -90px;
+		left: 70%;
+		background: url('../img/arrow.png') no-repeat center;
+		}
+
+	.left-arrow{
+		left: 2%;
+	}
+
+	.right-arrow{
+		left: 94%;
+	}		
+
+}
+
+@media only screen and (max-width : 1200px) {
+	body{
+		min-width: 1200px;
+	}
+	
+	.promo-container{
+		width: 95%;
+	}
+
+	.post-promo-block h2{
+		width: 41%;
+	}
+
+	.slider-window{
+		width: 550px;
+	}
+
+
+}
+
+@media only screen and (max-width : 1024px) {
+	body{
+		min-width: 1000px;
+	}
+
+	.description-block h2{
+		font-size: 47px;
+	}
+
+	.post-promo-block h2{
+		width: 47%;
+	}
+
+	.left-arrow{
+		left: 18%;
+	}
+
+	.right-arrow{
+		left: 78%;
+	}		
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	body{
+		min-width: 931px;
+	}
+
+	.post-promo-block{
+		padding-bottom: 20px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	body{
+		min-width: 700px;
+	}
+
+	.page-header{
+		font-size: 40px;
+		padding-bottom: 0;
+	}
+
+	.promo-container{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.description-block{
+		margin: 0;
+	}
+
+	.description-block h2{
+		font-size: 45px;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.book-description{
+		font-size: 25px;
+		padding: 10px;
+		text-align: center;
+	}
+
+	.promo-list{
+		width: 27%;
+		margin: 0 auto;
+		padding-bottom: 30px;
+	}
+
+	.book-block{
+		margin: 0;
+		padding-top: 30px;
+		text-align: center;
+		background-color: white;
+	}
+
+	.form-block{
+		width: 80%;
+		margin: 0 auto;
+		padding: 10px;
+	}
+
+	.free-row{
+		text-align: center;
+	}
+
+	.main-form{
+		flex-direction: row;
+			input{
+			width: 32%;
+			margin-bottom: 0;
+			font-size: 18px;
+		}
+	}
+
+	input:not(:last-child){
+		margin-right: 15px;
+	}
+
+	.submit-btn{
+		height: 56px;
+	}
+
+	.post-promo-block{
+		margin-top: 48px;
+		h2{
+			width: 63%;
+		}
+	}
+
+	.post-description::after{
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 120px;
+		top: -90px;
+		left: 70%;
+		background: url('../img/arrow.png') no-repeat center;
+		background-size: contain;
+	}
+
+	.left-arrow{
+		left: 5%;
+	}
+
+	.right-arrow{
+		left: 90%;
+	}
+
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	body{
+		min-width: 480px;
+	}
+
+	.page-header{
+		font-size: 20px;
+		padding: 0;
+	}
+
+	.promo-container{
+		width: 100%;
+	}
+
+	.promo-list{
+		width: 45%;
+	}
+
+	.description-block h2{
+		font-size: 34px;
+	}
+
+	.book-img{
+		width: 60%;
+	}
+
+	.form-block{
+		width: 100%;
+		padding: 0;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		box-sizing: border-box;
+	}
+
+	.main-form input{
+		width: 30%;
+		height: 50px;
+		font-size: 14px;
+
+	}
+
+	.post-promo-block h2{
+		width: 90%;
+		font-size: 25px;
+	}
+
+	.slider-container{
+		
+	}
+
+	.slider-window{
+		width: 280px;
+		height: 480px;
+	}
+
+	.slide-block{
+		width: 280px;
+	}
+
+	.user-img{
+		width: 100px;
+	}
+	
+}
+
+
+@media only screen and (max-width : 320px) {
+	body{
+		min-width: 320px;
+	}
+
+
+
+	.page-header{
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	.description-block h2{
+		width: 80%;
+	}
+
+	.promo-list{
+		width: 65%;
+	}
+
+	.form-block{
+		box-sizing: border-box;
+	}
+
+	.main-form{
+		flex-direction: column;
+		input{
+			width: 80%;
+			margin: 0;
+		}
+	}
+
+	input:not(:last-child){
+		margin-bottom: 10px;
+	}
+
+	.post-description::after{
+		content: "";
+		position: absolute;
+		width: 100px;
+		height: 120px;
+		top: -90px;
+		left: 35%;
+		background: url('../img/arrow.png') no-repeat center;
+		background-size: contain;
+	}
+
+	.slider-container{
+		
+	}
+
+	.left-arrow{
+		left: 2%;
+	}
+
+	.right-arrow{
+		left: 88%;
+	}
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

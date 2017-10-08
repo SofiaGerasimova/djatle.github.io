@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Template</title>
+    <link href="#" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="dist/normalize.css"/>
+    <link rel="stylesheet" href="dist/style.css"/>
+    <link rel="stylesheet" type="text/css" href="#">
+   </head>
+<body>
+	<div class="main-content">
+    	<h1 class="page-header">ОБРЕТИТЕ ФИГУРУ СВОЕЙ МЕЧТЫ</h1>
+    	<div class="promo-wrapper">
+    	<div class="promo-container">
+    		<div class="description-block  promo-block">
+	    		<h2>ПОХУДЕЙТЕ<br> НА 10 КГ ЗА 10 ДНЕЙ!</h2>
+	    		<div class="decor-line"></div>
+	    						
+				<p class="book-description">
+					Оставьте свой e-mail и получите книгу с 330 простыми
+					и вкусными рецептами для ускорения
+					метаболизма
+				</p>
+
+				<ul class="promo-list">
+					<li class="promo-item">Никакого спорта</li>
+					<li class="promo-item">Никаких диет</li>
+					<li class="promo-item">Никаких медикаментов</li>
+				</ul>
+			</div>
+
+			<div class="book-block  promo-block">
+				<img src="img/book.png" alt="#" class="book-img" >
+			</div>
+
+			<div class="form-block  promo-block">
+				<div class="author-row">Бестселлер Милы Гриценко</div>
+				<div class="free-row">БЕСПЛАТНО</div>
+				<div class="date-row">только до <span id="current_date">сегодня</span></div>
+				<form action="#" method="POST" id="book_form" class="main-form" onsubmit="validate(); return false">
+					<input type="text" class="form-field" id="user_name" required placeholder="Ваше Имя" pattern="^[a-z0-9_-]{3,16}$">
+					<input type="email" class="form-field" id="user_email" required placeholder="Ваш e-mail" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}">
+					<input type="submit" class="submit-btn" value="ПОЛУЧИТЬ КНИГУ">
+				</form>
+			</div>
+    	</div>
+    	</div>
+    	<div class="post-promo-block">
+    		<h2 class="post-description">
+    			Стройное, подтянутое тело без складок
+				и целлюлита всего за 10 дней 
+    		</h2>
+    	</div>
+
+    	<div class="slider-container">
+    		<div class="slider-window">
+    			<div class="slide-wrapper" id="slider">
+    			<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-1.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Никогда не готовила ничего сложнее
+							отварных макарон. Теперь готовлю, как
+							шеф-повар модного ресторана! Все безумно
+							вкусно и полезно. И тающие килограммы
+							в качестве бонуса. Разве не прекрасно?1
+    					</p>
+    					<div class="user-data-block">
+    						Марта, 28 лет
+    					</div>
+    					<div class="user-location-block">
+    						Гомель
+    					</div>
+    				</div>
+    			</div>
+				
+				<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-2.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Не думала, что в моем возрасте смогу
+							выглядеть как девчонка. Всю жизнь была
+							пышкой, а тут такая красота – сама на себя
+							не налюбуюсь. Мой случай – подтверждение
+							того, что после 40 жизнь только начинается.
+							Мила Гриценко – мой герой.2
+    					</p>
+    					<div class="user-data-block">
+    						Марина, 40 лет
+    					</div>
+    					<div class="user-location-block">
+    						Мачулищи
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-1.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Никогда не готовила ничего сложнее
+							отварных макарон. Теперь готовлю, как
+							шеф-повар модного ресторана! Все безумно
+							вкусно и полезно. И тающие килограммы
+							в качестве бонуса. Разве не прекрасно?3
+    					</p>
+    					<div class="user-data-block">
+    						Марта, 28 лет
+    					</div>
+    					<div class="user-location-block">
+    						Гомель
+    					</div>
+    				</div>
+    			</div>
+				
+				<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-2.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Не думала, что в моем возрасте смогу
+							выглядеть как девчонка. Всю жизнь была
+							пышкой, а тут такая красота – сама на себя
+							не налюбуюсь. Мой случай – подтверждение
+							того, что после 40 жизнь только начинается.
+							Мила Гриценко – мой герой.4
+    					</p>
+    					<div class="user-data-block">
+    						Марина, 40 лет
+    					</div>
+    					<div class="user-location-block">
+    						Мачулищи
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-1.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Никогда не готовила ничего сложнее
+							отварных макарон. Теперь готовлю, как
+							шеф-повар модного ресторана! Все безумно
+							вкусно и полезно. И тающие килограммы
+							в качестве бонуса. Разве не прекрасно?5
+    					</p>
+    					<div class="user-data-block">
+    						Марта, 28 лет
+    					</div>
+    					<div class="user-location-block">
+    						Гомель
+    					</div>
+    				</div>
+    			</div>
+				
+				<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-2.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Не думала, что в моем возрасте смогу
+							выглядеть как девчонка. Всю жизнь была
+							пышкой, а тут такая красота – сама на себя
+							не налюбуюсь. Мой случай – подтверждение
+							того, что после 40 жизнь только начинается.
+							Мила Гриценко – мой герой.6
+    					</p>
+    					<div class="user-data-block">
+    						Марина, 40 лет
+    					</div>
+    					<div class="user-location-block">
+    						Мачулищи
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-1.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Никогда не готовила ничего сложнее
+							отварных макарон. Теперь готовлю, как
+							шеф-повар модного ресторана! Все безумно
+							вкусно и полезно. И тающие килограммы
+							в качестве бонуса. Разве не прекрасно?7
+    					</p>
+    					<div class="user-data-block">
+    						Марта, 28 лет
+    					</div>
+    					<div class="user-location-block">
+    						Гомель
+    					</div>
+    				</div>
+    			</div>
+				
+				<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-2.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Не думала, что в моем возрасте смогу
+							выглядеть как девчонка. Всю жизнь была
+							пышкой, а тут такая красота – сама на себя
+							не налюбуюсь. Мой случай – подтверждение
+							того, что после 40 жизнь только начинается.
+							Мила Гриценко – мой герой.8
+    					</p>
+    					<div class="user-data-block">
+    						Марина, 40 лет
+    					</div>
+    					<div class="user-location-block">
+    						Мачулищи
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-1.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Никогда не готовила ничего сложнее
+							отварных макарон. Теперь готовлю, как
+							шеф-повар модного ресторана! Все безумно
+							вкусно и полезно. И тающие килограммы
+							в качестве бонуса. Разве не прекрасно?9
+    					</p>
+    					<div class="user-data-block">
+    						Марта, 28 лет
+    					</div>
+    					<div class="user-location-block">
+    						Гомель
+    					</div>
+    				</div>
+    			</div>
+				
+				<div class="slide-block">
+    				<div class="user-img-block">
+    					<img src="img/user-img-2.png" alt="#" class="user-img">
+    				</div>
+    				<div class="user-info-block">
+    					<p class="user-comment">
+    						Не думала, что в моем возрасте смогу
+							выглядеть как девчонка. Всю жизнь была
+							пышкой, а тут такая красота – сама на себя
+							не налюбуюсь. Мой случай – подтверждение
+							того, что после 40 жизнь только начинается.
+							Мила Гриценко – мой герой.10
+    					</p>
+    					<div class="user-data-block">
+    						Марина, 40 лет
+    					</div>
+    					<div class="user-location-block">
+    						Мачулищи
+    					</div>
+    				</div>
+    			</div>
+    			
+    			</div>
+				
+    		</div>
+    		<div class="left-arrow" id="prev_btn"></div>
+			<div class="right-arrow" id="next_btn"></div>
+    	</div>
+    </div>
+
+	
+	
+	
+    <script src="dist/main.min.js"></script>
+    <script src="//localhost:8585/livereload.js"></script>
+</body>
+</html>

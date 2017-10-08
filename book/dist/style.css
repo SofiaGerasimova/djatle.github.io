@@ -1,0 +1,539 @@
+@font-face {
+  font-family: Proxima Nova Regular;
+  src: url('../fonts/Proxima Nova Regular.otf');
+}
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url('../fonts/Proxima Nova Bold.otf');
+}
+@font-face {
+  font-family: Proxima Nova Light;
+  src: url('../fonts/Proxima Nova Light.otf');
+}
+@font-face {
+  font-family: Proxima Nova Condensed Bl;
+  src: url('../fonts/Proxima Nova Condensed Black.otf');
+}
+@font-face {
+  font-family: Bebas Neue Bold;
+  src: url('../fonts/BebasNeue Bold.otf');
+}
+@font-face {
+  font-family: Myriad Pro Regular;
+  src: url('../fonts/8143.otf');
+}
+.border {
+  border: 1px solid red;
+}
+body {
+  margin: 0 auto;
+}
+.main-content {
+  border-top: 10px solid #ffd200;
+}
+.page-header {
+  font-family: Proxima Nova Bold, sans-serif;
+  font-size: 45px;
+  line-height: 72px;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.promo-wrapper {
+  width: 100%;
+  background-color: #ffd200;
+}
+.promo-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 61%;
+  margin: 0 auto;
+}
+.description-block {
+  font-size: 19px;
+  margin-right: -65px;
+}
+.description-block h2 {
+  font-family: Bebas Neue Bold;
+  font-size: 58px;
+  margin: 0;
+}
+.promo-list {
+  padding-left: 20px;
+  font-family: Proxima Nova Regular;
+}
+.decor-line {
+  width: 100%;
+  border-top: 1px solid #e3bb00;
+  border-bottom: 1px solid #ffe363;
+}
+.book-block {
+  width: 100%;
+  margin-top: -70px;
+  margin-bottom: -90px;
+}
+.form-block {
+  background-color: #3c3636;
+  color: white;
+  margin-left: -90px;
+  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 35px;
+}
+.author-row {
+  font-family: Proxima Nova Light, sans-serif;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+}
+.free-row {
+  font-family: Proxima Nova Condensed Bl, sans-serif;
+  font-size: 46px;
+  line-height: 54px;
+  color: #ffd200;
+}
+.date-row {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.main-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+}
+input {
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+  padding-left: 15px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+input:not(:last-child) {
+  margin-bottom: 25px;
+}
+.submit-btn {
+  width: 100%;
+  height: 65px;
+  font-size: 23px;
+  color: white;
+  background: url('../img/btn-bgrnd.png') no-repeat;
+}
+.post-promo-block {
+  margin-top: 70px;
+  position: relative;
+  padding-bottom: 50px;
+}
+.post-promo-block h2 {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Myriad Pro Regular, sans-serif;
+  font-size: 27px;
+}
+.post-description::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 120px;
+  top: -90px;
+  left: 64%;
+  background: url('../img/arrow.png') no-repeat center;
+}
+/*****оформление слайдера******/
+.slider-container {
+  position: relative;
+}
+.slider-window {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding-top: 50px;
+  border-top: 1px solid #dddddd;
+  position: relative;
+  width: 1145px;
+  height: 300px;
+  overflow: hidden;
+}
+.slide-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  transition: left 500ms;
+}
+.slide-block {
+  display: -ms-flexbox;
+  display: flex;
+  width: 590px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.left-arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url('../img/left-arrow.png') no-repeat center;
+  top: 50%;
+  left: 6%;
+}
+.right-arrow {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background: url('../img/right-arrow.png') no-repeat center;
+  top: 50%;
+  left: 91%;
+}
+/*******************/
+.user-info-block {
+  padding-left: 10px;
+  font-family: Proxima Nova Regular, sans-serif;
+}
+.user-comment {
+  position: relative;
+  width: 90%;
+  margin: 0;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.user-comment::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 12px;
+  top: 100%;
+  left: 0%;
+  border-top: 2px solid yellow;
+  border-left: 12px solid yellow;
+}
+.user-data-block {
+  font-size: 18px;
+  font-weight: bold;
+}
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1920px) {
+  body {
+    min-width: 1920px;
+  }
+  .left-arrow {
+    left: 17%;
+  }
+  .right-arrow {
+    left: 81%;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  body {
+    min-width: 1680px;
+  }
+  .promo-container {
+    width: 70%;
+  }
+  .description-block h2 {
+    font-size: 50px;
+  }
+  .post-description::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    top: -90px;
+    left: 66%;
+    background: url('../img/arrow.png') no-repeat center;
+  }
+  .left-arrow {
+    left: 10%;
+  }
+  .right-arrow {
+    left: 87%;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  body {
+    min-width: 1420px;
+  }
+  .promo-container {
+    width: 80%;
+  }
+  .post-promo-block h2 {
+    width: 33%;
+  }
+  .left-arrow {
+    left: 6%;
+  }
+  .right-arrow {
+    left: 91%;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  body {
+    min-width: 1366px;
+  }
+  .promo-container {
+    width: 85%;
+  }
+  .post-promo-block h2 {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  body {
+    min-width: 1280px;
+  }
+  .promo-container {
+    width: 90%;
+  }
+  .post-promo-block h2 {
+    width: 38%;
+  }
+  .post-description::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    top: -90px;
+    left: 70%;
+    background: url('../img/arrow.png') no-repeat center;
+  }
+  .left-arrow {
+    left: 2%;
+  }
+  .right-arrow {
+    left: 94%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  body {
+    min-width: 1200px;
+  }
+  .promo-container {
+    width: 95%;
+  }
+  .post-promo-block h2 {
+    width: 41%;
+  }
+  .slider-window {
+    width: 550px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    min-width: 1000px;
+  }
+  .description-block h2 {
+    font-size: 47px;
+  }
+  .post-promo-block h2 {
+    width: 47%;
+  }
+  .left-arrow {
+    left: 18%;
+  }
+  .right-arrow {
+    left: 78%;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  body {
+    min-width: 931px;
+  }
+  .post-promo-block {
+    padding-bottom: 20px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    min-width: 700px;
+  }
+  .page-header {
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+  .promo-container {
+    width: 100%;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .description-block {
+    margin: 0;
+  }
+  .description-block h2 {
+    font-size: 45px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .book-description {
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+  }
+  .promo-list {
+    width: 27%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  .book-block {
+    margin: 0;
+    padding-top: 30px;
+    text-align: center;
+    background-color: white;
+  }
+  .form-block {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .free-row {
+    text-align: center;
+  }
+  .main-form {
+    -ms-flex-direction: row;
+        flex-direction: row;
+  }
+  .main-form input {
+    width: 32%;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  input:not(:last-child) {
+    margin-right: 15px;
+  }
+  .submit-btn {
+    height: 56px;
+  }
+  .post-promo-block {
+    margin-top: 48px;
+  }
+  .post-promo-block h2 {
+    width: 63%;
+  }
+  .post-description::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    top: -90px;
+    left: 70%;
+    background: url('../img/arrow.png') no-repeat center;
+    background-size: contain;
+  }
+  .left-arrow {
+    left: 5%;
+  }
+  .right-arrow {
+    left: 90%;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  body {
+    min-width: 480px;
+  }
+  .page-header {
+    font-size: 20px;
+    padding: 0;
+  }
+  .promo-container {
+    width: 100%;
+  }
+  .promo-list {
+    width: 45%;
+  }
+  .description-block h2 {
+    font-size: 34px;
+  }
+  .book-img {
+    width: 60%;
+  }
+  .form-block {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  .main-form input {
+    width: 30%;
+    height: 50px;
+    font-size: 14px;
+  }
+  .post-promo-block h2 {
+    width: 90%;
+    font-size: 25px;
+  }
+  .slider-window {
+    width: 280px;
+    height: 480px;
+  }
+  .slide-block {
+    width: 280px;
+  }
+  .user-img {
+    width: 100px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  body {
+    min-width: 320px;
+  }
+  .page-header {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .description-block h2 {
+    width: 80%;
+  }
+  .promo-list {
+    width: 65%;
+  }
+  .form-block {
+    box-sizing: border-box;
+  }
+  .main-form {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .main-form input {
+    width: 80%;
+    margin: 0;
+  }
+  input:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .post-description::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120px;
+    top: -90px;
+    left: 35%;
+    background: url('../img/arrow.png') no-repeat center;
+    background-size: contain;
+  }
+  .left-arrow {
+    left: 2%;
+  }
+  .right-arrow {
+    left: 88%;
+  }
+}
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */

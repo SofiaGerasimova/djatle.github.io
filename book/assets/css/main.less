@@ -1,0 +1,259 @@
+
+@font-face{
+	font-family: Proxima Nova Regular;
+	src: url('../fonts/Proxima Nova Regular.otf');
+}
+
+@font-face{
+	font-family: Proxima Nova Bold;
+	src: url('../fonts/Proxima Nova Bold.otf');
+}
+
+@font-face{
+	font-family: Proxima Nova Light;
+	src: url('../fonts/Proxima Nova Light.otf');
+}
+
+@font-face{
+	font-family: Proxima Nova Condensed Bl;
+	src: url('../fonts/Proxima Nova Condensed Black.otf');
+}
+
+@font-face{
+	font-family: Bebas Neue Bold;
+	src: url('../fonts/BebasNeue Bold.otf');
+}
+
+@font-face{
+	font-family: Myriad Pro Regular;
+	src: url('../fonts/8143.otf');
+}
+
+.border{
+	border: 1px solid red;
+}
+
+body{
+	
+	
+	margin: 0 auto;  
+}
+
+.main-content{
+	border-top: 10px solid #ffd200;
+}
+
+.page-header{
+	font-family: Proxima Nova Bold, sans-serif;
+	font-size: 45px;
+	line-height: 72px;
+	text-align: center;
+	padding-bottom: 45px;
+}
+
+.promo-wrapper{
+	width: 100%;
+	background-color: #ffd200;
+}
+
+.promo-container{
+	display: flex;
+	align-items: center;
+	width: 61%;
+	margin: 0 auto; 
+}
+
+.description-block{
+	font-size: 19px;
+	margin-right: -65px;
+	
+}
+
+.description-block h2{
+	font-family: Bebas Neue Bold;
+	font-size: 58px;
+	margin: 0;  
+}
+
+.promo-list{
+	padding-left: 20px;
+	font-family: Proxima Nova Regular;
+}
+
+.decor-line{
+	width: 100%;
+	border-top: 1px solid #e3bb00;
+	border-bottom: 1px solid #ffe363;
+}
+
+.book-block{
+	width: 100%;
+	margin-top: -70px;
+	margin-bottom: -90px;
+}
+
+.form-block{
+	background-color: #3c3636;
+	color: white;
+	margin-left: -90px;
+	padding: 30px;
+	padding-top: 30px;
+	padding-bottom: 35px;
+}
+
+.author-row{
+	font-family: Proxima Nova Light, sans-serif;
+	font-size: 19px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.free-row{
+	font-family: Proxima Nova Condensed Bl, sans-serif;
+	font-size: 46px;
+	line-height: 54px;
+	color: #ffd200;
+}
+
+.date-row{
+	text-align: center;
+	font-size: 18px; 
+	padding-bottom: 5px;
+}
+
+.main-form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+input{
+	width: 100%;
+	height: 55px;
+	font-size: 20px;
+	padding-left: 15px;
+	border: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+input:not(:last-child){
+	margin-bottom: 25px;
+}
+
+.submit-btn{
+	width: 100%;
+	height: 65px; 
+	font-size: 23px;
+	color: white;
+	background: url('../img/btn-bgrnd.png') no-repeat;
+}
+
+.post-promo-block{
+	
+	margin-top: 70px;
+	position: relative;
+	padding-bottom: 50px;
+	h2{
+		width: 30%;
+		margin: 0 auto;
+		text-align: center;
+		font-family: Myriad Pro Regular, sans-serif;
+		font-size: 27px;
+	}
+}
+
+.post-description::after{
+	content: "";
+	position: absolute;
+	width: 150px;
+	height: 120px;
+	top: -90px;
+	left: 64%;
+	background: url('../img/arrow.png') no-repeat center;
+	
+}
+
+/*****оформление слайдера******/
+.slider-container{
+	position: relative;
+}
+
+.slider-window{
+	display: flex;
+	margin: 0 auto;
+	padding-top: 50px;
+	border-top: 1px solid #dddddd;
+	position: relative;
+	width: 1145px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+
+.slide-wrapper{
+	display: flex;
+	position: absolute;
+	left: 0%;
+	transition: left 500ms;
+}
+
+.slide-block{
+	display: flex;
+	width: 590px;
+	flex-shrink: 0;
+}
+
+.left-arrow{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: url('../img/left-arrow.png') no-repeat center;
+	top: 50%;
+	left: 6%;
+}
+
+.right-arrow{
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: url('../img/right-arrow.png') no-repeat center;
+	top: 50%;
+	left: 91%;
+}		
+/*******************/
+
+.user-info-block{
+	padding-left: 10px;
+	font-family: Proxima Nova Regular, sans-serif;
+}
+
+.user-comment{
+	position: relative;
+	width: 90%;
+	margin: 0;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	font-size: 18px;
+	line-height: 24px;
+
+}
+
+.user-comment::after{
+	content: "";
+	position: absolute;
+	width: 90%;
+	height: 12px;
+	top: 100%;
+	left: 0%;
+	border-top: 2px solid yellow;
+	border-left: 12px solid yellow;
+}
+
+.user-data-block{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+
+@import "media.less";
