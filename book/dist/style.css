@@ -347,7 +347,7 @@ input:not(:last-child) {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   body {
-    min-width: 931px;
+    min-width: 992px;
   }
   .post-promo-block {
     padding-bottom: 20px;
