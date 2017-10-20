@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="newsApp">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title></title>
+		<link href="#" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="#">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	</head>
+	
+	<body ng-controller="NewsCtrl">
+		<div class="container  main-container">
+			<!--*****************Генерация списка источников новостей*******************!-->
+			
+			<nav class="row  nav-row">
+				<ul class="nav-menu  nav  nav-tabs">
+					<li class="menu-item" ng-repeat="item in nav_arr" ng-click="showFunc(item.name, item.img, item.text)">
+						<img src="{{item.icon}}" alt="#">
+					</li>
+					
+				</ul>
+			</nav>
+
+			<div class="button-container">
+				<button class="list-btn  custom-btn" ng-click="showWatchList()">WatchList</button>
+				<button class="articles-btn  custom-btn" ng-click="showUserArticles()">User Articles</button>
+			</div>
+			
+			<!--*****************Динамическая генерация ленты новостей*******************!-->
+			
+			<div class="news-wrapper" ng-show="current_page == 'main'">
+				<div class="news-logo">
+					<img src="{{news.img}}" alt="#" width="300">
+				</div>
+				<div class="news-container" ng-repeat="item in news">
+               		<div class="row">
+						<div class="news-image  col-md-5" id="n_img">
+							<img src="{{item.urlToImage}}" alt="#" width="100%">
+							<button class="plus-btn" ng-click="readLater(item)" title="Add This Article to Watchlist"></button>
+						</div>
+						<div class="news-header  col-md-7" id="n_head" ng-click="showArticle(item.title, item.description, item.url, item.urlToImage)">
+							<h1>{{item.title}}</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--*****************Просмотр конкретной статьи*******************!-->
+			
+			<div class="article-container" ng-show="current_page == 'article'">
+				<div class="article-header"><h1>{{article.title}}</h1></div>
+				<p class="article-description">{{article.description}}</p>
+				<a href="{{article.url}}" class="source-link">Read Article</a>
+				<div class="article-image">
+					<img src="{{article.urlToImage}}" alt="#">
+				</div>
+			</div>
+
+			<!--*****************Спсиок сохраненных новостей*******************!-->
+			
+			<div class="empty-list" ng-show="current_page == 'watch_list' && list.length == '0'" ><h2>Your WatchList is empty now...</h2></div>
+
+			<div class="watch-list-container" ng-show="current_page == 'watch_list'" ng-repeat="item in list">
+				<div class="news-header" id="n_head"><h1>{{item.title}}</h1></div>
+					<div class="row">
+						<div class="news-image  col-md-5  one-article-image " id="n_img">
+							<img src="{{item.urlToImage}}" alt="{{}}" width="100%">
+						</div>
+					<div class="link-container">
+						<button class="show-article-btn  btn-default" ng-click="showArticle(item.title, item.description, item.url, item.urlToImage)">Read More</button>
+
+						<button ng-click="removeFromList(item)" class="btn-danger">Remove from Watch List</button>
+					</div>
+				</div>
+				
+			</div>
+			
+			<!--****Интерфейс добавления и просмотра пользовательских статей****!-->
+			
+			<div class="user-articles" ng-show="current_page == 'user_articles'">
+				<form name="articleForm" ng-submit="addArticle(newArticle)" novalidate>
+					<input type="text" name="article-title" placeholder="Article Title" required ng-model="newArticle.title" class="title-field">
+					
+					<textarea name="articleDescription" id="" cols="30" rows="5" required ng-model="newArticle.description" placeholder="Add article text here" class="article-field"></textarea>
+					
+					<button type="submit" ng-disabled="articleForm.$invalid" class="article-submit-btn">Add Article</button>
+				</form>
+				<h1 class="user-articles-header"  ng-show="exiting_arr.length > 0">Your articles</h1>
+				<div class="articles-block" ng-repeat="item in exiting_arr">
+					<div><h2 class="user-article-title">{{item.title}}</h2></div>
+					<div><p class="user-article-text">{{item.description}}</p></div>
+					<button class="remove-article-btn  btn-danger" ng-click="removeArticle(item)">Remove This Article</button>
+				</div>
+			</div>
+				
+		</div>
+		<script src="librairies/angular.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+	
+</html>	
