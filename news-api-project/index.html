@@ -41,9 +41,9 @@
                		<div class="row">
 						<div class="news-image  col-md-5" id="n_img">
 							<img src="{{item.urlToImage}}" alt="#" width="100%">
-							<button class="plus-btn" ng-click="readLater(item)" title="Add This Article to Watchlist"></button>
+							<button class="plus-btn" ng-click="readLater(item, $event)" title="Add This Article to Watchlist" ng-show="item.added != 1" ></button>
 						</div>
-						<div class="news-header  col-md-7" id="n_head" ng-click="showArticle(item.title, item.description, item.url, item.urlToImage)">
+						<div class="news-header  col-md-7" id="n_head" ng-click="showArticle(item)">
 							<h1>{{item.title}}</h1>
 						</div>
 					</div>
@@ -72,7 +72,7 @@
 							<img src="{{item.urlToImage}}" alt="{{}}" width="100%">
 						</div>
 					<div class="link-container">
-						<button class="show-article-btn  btn-default" ng-click="showArticle(item.title, item.description, item.url, item.urlToImage)">Read More</button>
+						<button class="show-article-btn  btn-default" ng-click="showArticle(item)">Read More</button>
 
 						<button ng-click="removeFromList(item)" class="btn-danger">Remove from Watch List</button>
 					</div>
