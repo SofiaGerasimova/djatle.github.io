@@ -26,27 +26,57 @@
 	var default_source = model.nav.bbc; //здесь указан параметр, который отвечает за источник отображения новостей по умолчанию
 	defaultShow(default_source);  
 
+	watchList = storage['watchList'];
+	if(watchList == undefined){
+		storage.setItem("watchList", JSON.stringify([]));
+	}
 
+	user_articles = storage['user_articles'];
+	if(user_articles == undefined){
+		storage.setItem("user_articles", JSON.stringify([]));
+	}
 	
 	/*********Основная функция постоения ленты новостей.******************/
 	$scope.showFunc = function(source, img, text){	
 		$http.get(request_body+'source='+source+sort+api_key).then(successCallback, errorCallback); //в этой строке происходит "ручная сборка" запроса к API
 			function successCallback(response){
-			$scope.news = response.data.articles;
-			$scope.news.img = img;
-			$scope.news.text = text;
-			$scope.current_page = 'main';
+				$scope.news = checkList(response.data.articles);
+				$scope.news.img = img;
+				$scope.news.text = text;
+				$scope.current_page = 'main';
 		}
 			function errorCallback(error){
 			    alert('error');
 		}
 	}
 
+
+	/*************Проверка на совпадение с записями в WatchList*******/
+
+	function checkList(news){
+		watchList = storage['watchList'];
+		watchList_g = JSON.parse(watchList);
+			for(i=0; i<news.length; i++){
+
+				for(n=0; n<watchList_g.length; n++){
+					
+					if(news[i].title == watchList_g[n].title){
+						news[i].added = 1;
+					}
+					
+				}
+				
+			}
+			return news;
+			
+	}
+
 	/*******Функция отображения ленты новостей из источника назначенного по умолчанию************/
 	function defaultShow(source){
 		$http.get(request_body+'source='+source.name+sort+api_key).then(successCallback, errorCallback);
 		function successCallback(response){
-		$scope.news = response.data.articles;
+		$scope.news = checkList(response.data.articles);
+		
 		$scope.current_page = 'main';
 		$scope.news.img = source.img;  
 		}
@@ -57,42 +87,40 @@
 	}
 
 	/********Функционал построения и отображения конкретной статьи**************/
-	$scope.showArticle = function(title, description, _url, urlToImage){
-			$scope.article = createArticleObj(title, description, _url, urlToImage);
+	$scope.showArticle = function(article){
+			$scope.article = article;
 			$scope.current_page = 'article';
 	}
 
-	/*********Добавление статьи в WatchList. Реализовано через добавление отдельной записи в Localstorage*********/
-	$scope.readLater = function(article)
-			{	
-				storage.setItem("item"+storage.length, JSON.stringify(article));
-			}
+	/*********Добавление статьи в WatchList*********/
+	$scope.readLater = function(article, event)
+		{	
+			event.currentTarget.style.display = 'none'; //ортопедический снаряд
+			article_arr_s = JSON.parse(storage['watchList']); 
+			article_arr_s.push(article); //добавили новую статью в массив
+			storage.setItem('watchList', JSON.stringify(article_arr_s));//отправили обновленный массив в Localstorage
+			$scope.list = article_arr_s;
+
+		}
 
 	/********Функционал построения и отображения списка сохраненных статей**************/
 	$scope.showWatchList = function(){
 			$scope.current_page = 'watch_list';
-			$scope.list = [];	
-			
-			for(i=0; i<=storage.length; i++){
-				
-				if(storage["item"+i])
-				{
-					$scope.list.push(JSON.parse(storage["item"+i]));
-				}
-			}
+			article_arr_g = storage['watchList'];   
+			$scope.list = JSON.parse(article_arr_g); 
 	}
 
 	/********Функционал удаления конкретной статьи из WatchList**************/
 	$scope.removeFromList = function(article){
 			var ident = article.title;
-			for(i=0; i<=storage.length; i++){
+			article_arr_s = JSON.parse(storage['watchList']);
+			for(i=0; i<=article_arr_s.length; i++){
 				
-			if(storage["item"+i]){	
-				if(JSON.parse(storage["item"+i]).title == ident)
-				{	
-					storage.removeItem("item"+i);
-					$scope.list.splice("item"+i, 1);
-				}
+			if(article_arr_s[i].title  == ident){	
+				article_arr_s.splice(i, 1);
+				storage.setItem('watchList', JSON.stringify(article_arr_s));
+				$scope.list = article_arr_s;
+				break;
 			}
 		}
 
@@ -105,14 +133,10 @@
 	$scope.showUserArticles = function(){
 		$scope.current_page = "user_articles";
 		article_arr_g = storage['user_articles'];   
-		if(article_arr_g)//проверяем существование массива 'user_articles'
-		{
-			$scope.exiting_arr = JSON.parse(article_arr_g); //если массив существует, достаем из него данные и отдаем их $scope
-		}
-		else{
-			storage.setItem("user_articles", JSON.stringify([])); //если массив не существует - создаем его
-		}
-
+		
+		$scope.exiting_arr = JSON.parse(article_arr_g); //если массив существует, достаем из него данные и отдаем их $scope
+		
+		
 	}
 
 	/************Функционал построения и добавления пользовательской статьи в localsorage**************/
@@ -140,15 +164,11 @@
 				article_arr_s.splice(i, 1);
 				storage.setItem('user_articles', JSON.stringify(article_arr_s));
 				$scope.exiting_arr = article_arr_s;
+				break;
 			}
 		}
 	}		
 
-	/********Создание дополнительного объекта конкретной статьи. Используется для генереации отдельной записи. Спорное решение*****/
-	function createArticleObj(title, description, _url, urlToImage){
-			var article_obj = {"title":title, "description":description, "url":_url, "urlToImage":urlToImage};
-			return article_obj;
-	}
 	
 });
 
