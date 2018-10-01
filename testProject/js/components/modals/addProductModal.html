@@ -1,0 +1,22 @@
+<div class="modal-content">
+	<h3 class="modal-content__header">Add your product</h3>
+    <form name="productForm">
+		<label for="productName">Product Name</label>
+		<input type="text" placeholder="Type Product Name" id="productName" required data-ng-model="addProductModalCtrl.userProduct.productName" >
+		<label for="companyName">Company Name</label>
+		<input type="text" placeholder="Type Company Name" id="companyName" required data-ng-model="addProductModalCtrl.userProduct.companyName">
+		<label for="productDescription">Product Description(optional)</label>
+		<textarea placeholder="Insert information about your product here" 
+				  id="productDescription" 
+				  data-ng-model="addProductModalCtrl.userProduct.productDescription">
+		</textarea>
+		<div class="modal-content__actions-block">
+			<button type="submit" 
+					data-ng-click="addProductModalCtrl.saveProduct(productForm)" 
+					class="button button--apply button-style">
+						ACCEPT
+			</button>
+			<button data-ng-click="$close()" class="button button--cancel">DECLINE</button>
+		</div>
+	</form>
+</div>  

@@ -1,0 +1,23 @@
+<div class="products-board">
+	<div class="products-board__header-wrapper">
+		<h1 class="products-board__header">Products</h1>
+		<button class="product-add-btn button button-style show-for-small-only" data-ng-click="addNewProduct()">Add New</button>
+		<div class="products-board__actions-container">
+			<input type="text" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" class="products-board__search-field">
+			<button class="product-add-btn button button-style show-for-medium" data-ng-click="addNewProduct()">Add New</button>
+		</div>
+	</div>
+	<div class="products-board__card-container row">
+		<div data-ng-repeat="product in recievedProductsList" class="column small-12 medium-6 large-4" data-ng-if="!product.isDeleted">
+			<product-item data-product-item="product"></product-item>
+		</div>
+	</div>
+	<div class="products-board__pagination-wrapper">
+		<div class="products-board__pagination-elem products-board__pagination-elem--selected">1</div>
+		<div class="products-board__pagination-elem">2</div>
+		<div class="products-board__pagination-elem">3</div>
+		<div class="products-board__pagination-elem">4</div>
+		<button class="next-page-btn button">Next page &#9656;</button>
+	</div>
+</div>	
+</div>

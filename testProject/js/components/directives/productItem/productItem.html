@@ -1,0 +1,20 @@
+<div class="product-item">
+	<div class="product-item__header base-padding">
+		<div class="product-item__logo-wrapper">
+			<div class="product-item__logo-image" style="background-color: {{::productItem.productColor}}"></div>
+		</div>
+		<div class="product-item__product-info">
+			<h2 class="product-item__product-name bold">{{::productItem.productName}}</h2>
+			<span class="product-item__company-name">{{::productItem.companyName}}</span>
+		</div>
+	</div>
+	<div class="product-item__image-block">
+		<div class="product-item__image" style="background-color: {{::productItem.productColor}}"></div>
+	</div>
+	<div class="product-item__description-block base-padding">{{::productItem.productDescription}}</div>
+	<div class="product-item__actions-block">
+		<button class="button button--product-button">ACTION 1</button>
+		<button class="button button--product-button">ACTION 2</button>
+	</div>
+	<div class="product-item__remove-btn" data-ng-click="removeProduct()">&#215</div>
+</div>
